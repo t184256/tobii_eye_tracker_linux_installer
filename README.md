@@ -1,45 +1,9 @@
-It allows to install the drivers and development libraries to operate devices compatible with IS4 (Tobii 4C).
+An attempt to repackage
+https://github.com/MoscowskyAnton/tobii_eye_tracker_linux_installer
+for NixOS.
 
-The deps packages were obtained from the tobii page:
-https://developer.tobii.com/consumer-eye-trackers/stream-engine/getting-started
-
-The manager is obtained from:
-https://www.tobiipro.com/es/learn--support/downloads/
-(Changed to: https://www.tobiipro.com/product-listing/eye-tracker-manager/)
-
-#### Instalation
-```
-bash ./install_all.sh
-```
-#### Configuration
-
-Run the Tobii Pro Eye Tracker Manager:
-/opt/TobiiProEyeTrackerManager/TobiiProEyeTrackerManager
-
-Calibrate the device
-
-![Configuration](media/config.gif)
-
-#### Run the example code
-```
-cd example
-gcc  main.cpp -o main -pthread /usr/lib/tobii/libtobii_stream_engine.so
-./main
-```
-![Example test](media/example_test.gif)
-
-
-You will see how the tracker captures the position of the screen you are looking at
-
-
-#### Test env:
-
-SO: Ubuntu 20.04 LTS
-
-Tracker: Tobii 4C
-
-See:
-https://github.com/Eitol/tobii_is4_x11
-
-
-
+Please refer to
+https://github.com/MoscowskyAnton/tobii_eye_tracker_linux_installer
+and
+https://github.com/Eitol/tobii_eye_tracker_linux_installer
+for more info and non-NixOS instructions.
